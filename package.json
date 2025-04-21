@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
+  "homepage": "https://francesca9504.github.io/my-react-portfolio",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -14,13 +15,16 @@
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
     "loader-utils": "3.2.1",
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
